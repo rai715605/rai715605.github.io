@@ -1,60 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Fab Gadget Ltd.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css" type="text/css">
-    
+    <meta charset="utf-8">
+    <title>Game Genie</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle">Toggle Dark Mode</button>
 
-    <!-- This section is the header of the webpage -->
-    <header>
-        <img src="images/logo.png" alt="Fab Gadget Logo" width="100px" height="100px" />
-        <h1>Fab Gadget Ltd.</h1>
-        <h2>Delivering quality and innovative robotics to your home</h2>
-    </header>
-    <!-- This section is the navigation bar -->
-    <div class="buttons">
+<body>
+
+    <div class="header">
+        <img class="logo" src="Images/Logo.png" width="126" height="50" alt="" />
         <ul>
-            <li class="btn"><a href="index.html">Home</a></li>
-            <li class="btn"><a href="mower.html">Robot Mowers</a></li>
-            <li class="btn"><a href="video.html">Video</a></li>
-            <li class="btn"><a href="contact.html">Contact</a></li>
+            <li class="nav-button"><a href="#about">Home</a></li>
+            <li class="nav-button"><a href="#about">About</a></li>
+            <li class="nav-button"><a href="#guides">Guides</a></li>
+            <li class="nav-button"><a href="#contact">Contact</a></li>
+            <li class="nav-button"><a href="#FAQ">FAQ</a></li>
         </ul>
     </div>
 
-    <!-- This is the main content area of the page -->
-    <main>
-        <h1>Home</h1>
-        <p>At Fab Gadget Ltd, we have a variety of quality and innovative robotics for your home.</p>
-        <p>Starting from as low as £49 and up to £499 for our premium robotics, buy now.</p>
-    </main>
+    <div class="About">
+        <h1 class="category-heading" id="about">
+            About
+        </h1>
+        <h2 class="category-text">
+            Welcome to Game Genie, the ultimate website which provides guides on multiple games.
+        </h2>
+    </div>
 
-    <!-- This is the footer -->
-    <footer>
-        <ul id="social">
-            <a href="https://facebook.com"> <img src="images/fb1.jpg" width="40"></a>
-            <a href="https://instagram.com"> <img src="images/insta.png" width="40"></a>
-            <a href="https://youtube.com"> <img src="images/yt.png" width="40"></a>
-        </ul>
-        <ul id="legal">
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-    </footer>
+    <div class="Guides">
+        <h1 class="category-heading"  id="guides">
+            Guides
+        </h1>
+        <a class="guide-links" href="bloxfruits.html">
+            Blox Fruits
+        </a>
+    </div>
 
-    <!-- JavaScript for Dark Mode -->
-    <script>
-        // Add dark mode toggle functionality
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
+    <div class="Contact" id="contact">
+        <h1 class="category-heading">
+            Contact
+        </h1>
+        <a class="form-contact" href="contact.html">
+            Any questions? Contact us here
+        </a>
+    </div>
 
-        darkModeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode'); // Toggle dark mode class
-        });
-    </script>
+    <div class="FAQ" id="FAQ">
+        <h1 class="category-heading">
+            FAQ
+        </h1>
+        <h2 class="category-text">
+            Q: Which genre games do you cover?
+        </h2>
+        <h2 class="question-answer">
+            A: We cover all genre games, such as action, adventure, etc
+        </h2>
+
+        <h2 class="category-text">
+            Q: When were you founded?
+        </h2>
+        <h2 class="question-answer">
+            A: We were founded on January 25th 2025
+        </h2>
+    </div>
+
 </body>
 </html>
